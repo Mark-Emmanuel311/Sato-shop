@@ -1,10 +1,11 @@
 *{
     padding: 0;
     margin: 0;
-    border: 1px solid red;
 }
 
 .header{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     background-color: black;
@@ -17,9 +18,14 @@
     border-radius: 50%;
 }
 
+.header > span{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px;
+}
+
 .header p{
     font-weight: bold;
-    display: relative;
-    top: 100px;
-    left: 100px;
+    font-size: 25px;
 }
