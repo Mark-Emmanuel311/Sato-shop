@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .header{
@@ -161,6 +161,15 @@ li,a{
 li:hover,a:hover,a:active,a::after{
     color: black;
     cursor: pointer;
+}
+
+a i{
+    min-height: 50px;
+    padding: 0;
+    width: 100%;
+}
+
+a i:hover{
     font-size: 30px;
 }
 
@@ -199,4 +208,46 @@ footer > div:nth-child(2){
 button:active{
     color: white;
     background-color: dodgerblue;
+}
+
+.popup{
+    width: 98.6vw;
+    height:440vh;
+    background-color: black;
+    opacity: .8;
+    z-index: 1;
+    position: absolute;
+}
+
+.message{
+    width: 400px;
+    aspect-ratio: 16/9;
+    background-color: aliceblue;
+    position: sticky;
+    top: 250px;
+    margin: 250px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.message > button{
+    float: right;
+    padding: 5px;
+    padding-right: 15px;
+    margin-top: 0;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    text-align: right;
+}
+
+.text{
+    clear: both;
+    max-width: 90%;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 40px;
+    text-align: center;
 }
