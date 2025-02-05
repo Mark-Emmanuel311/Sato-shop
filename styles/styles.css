@@ -134,16 +134,18 @@ h3{
     margin-top: 50px;
 }
 
-li{
+li,a{
     list-style: none;
     text-align: center;
     margin: 5px;
     font-size: larger;
-    min-height: 40px;
+    min-height: 45px;
     width: 50px;
+    color: black;
 }
 
-li:hover{
+li:hover,a:hover,a:active,a::after{
+    color: black;
     cursor: pointer;
     font-size: 30px;
 }
