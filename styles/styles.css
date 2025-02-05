@@ -1,16 +1,22 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .header{
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: black;
     color: whitesmoke;
     padding: 3px;
+}
+
+.left{
+    position:relative;
+    right: 5vw;
 }
 
 .logo{
@@ -27,5 +33,12 @@
 
 .header p{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+
+h1{
+    font-size: 2.5em;
+    line-height: 1;
+    margin-bottom: 10px;
 }
