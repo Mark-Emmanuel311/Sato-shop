@@ -7,6 +7,11 @@ function reachUs(x){
     text.innerText = `Hello our esteemed customer, reach us directly ${insert}`;
     let first = document.querySelector(".message > button");
     first.parentElement.insertBefore(text,first.nextSibling);
+    document.querySelector(".popup").style.display = "block";
 }
 
-reachUs(0);
+document.querySelectorAll(".message > button").forEach(btn => {
+    btn.addEventListener('click',()=>{
+        document.querySelector(".popup").style.display = "none";
+    });
+});

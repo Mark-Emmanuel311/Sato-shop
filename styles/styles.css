@@ -216,6 +216,7 @@ button:active{
     opacity: .8;
     z-index: 1;
     position: absolute;
+    display: none;
 }
 
 .message{
