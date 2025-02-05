@@ -12,6 +12,8 @@ function reachUs(x){
 
 document.querySelectorAll(".message > button").forEach(btn => {
     btn.addEventListener('click',()=>{
+        document.querySelector(".text").remove();
         document.querySelector(".popup").style.display = "none";
+        
     });
 });
