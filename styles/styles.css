@@ -38,7 +38,35 @@
 
 
 h1{
-    font-size: 2.5em;
+    font-size: 4vw;
     line-height: 1;
     margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+    padding: 5vh 3vw;
+}
+
+.intro{
+    width: 40vw;
+}
+
+.first{
+    width: 40vw;
+}
+
+.intro > button{
+    margin: 1.5vh 0 0 0;
+    padding: 1vw;
+    min-width: 150px;
+    width: 10vw;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.intro > p{
+    max-width: 30vw;
 }
