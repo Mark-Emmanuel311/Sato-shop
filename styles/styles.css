@@ -4,6 +4,9 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
 .header{
     position: sticky;
     top: 0;
