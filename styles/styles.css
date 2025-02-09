@@ -278,16 +278,11 @@ button:active{
 }
 
 @media (max-width: 768px) {
-    *{
-        border: 1px solid red;
-    }
-
     .header{
         justify-content: flex-start;
         gap: 10px;
     }
     .header button{
-        border: 1px solid red;
         padding: 0;
         font-size: 13px;
     }
@@ -304,5 +299,29 @@ button:active{
 
     .header > i{
         display: none;
+    }
+
+    .intro{
+        opacity: 0;
+        transition: opacity .2s ease-out;
+    }
+    .intro.show
+    
+    .intro > p{
+        font-size: 13px;
+        max-width: 90%;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+    .container{
+        justify-content: flex-start;
+        padding: 8px;
+        gap: 5px;
+    }
+    .first{
+        width: 100px;
+        height: 180px;
     }
 }
