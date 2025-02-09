@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const fade = document.querySelectorAll(".fade");
+    fade.forEach(el => {
+      el.style.opacity = 1;
+      el.style.transition = "opacity 1s ease-in";
+    })
     const elements = document.querySelectorAll("img");
-  
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {

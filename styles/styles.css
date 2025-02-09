@@ -301,11 +301,9 @@ button:active{
         display: none;
     }
 
-    .intro{
+    .fade{
         opacity: 0;
-        transition: opacity .2s ease-out;
     }
-    .intro.show
     
     .intro > p{
         font-size: 13px;
@@ -323,5 +321,11 @@ button:active{
     .first{
         width: 100px;
         height: 180px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
     }
 }
