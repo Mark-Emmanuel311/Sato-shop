@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".body").style.opacity = "1";
+    document.querySelector(".body").style.transition = "opacity 2s ease-in";
+  });
+  
 document.getElementById('year').innerText = new Date().getFullYear();
 
 function reachUs(x){

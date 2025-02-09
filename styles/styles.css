@@ -4,6 +4,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.body{
+    opacity: .2;
+}
+
 body::-webkit-scrollbar {
     display: none;
   }
@@ -213,7 +217,7 @@ button:active{
 }
 
 .popup{
-    width: 98.6vw;
+    width: 100vw;
     height:440vh;
     background-color: black;
     opacity: .8;
