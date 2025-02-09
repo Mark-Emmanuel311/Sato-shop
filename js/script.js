@@ -1,7 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector(".body").style.opacity = "1";
-    document.querySelector(".body").style.transition = "opacity 2s ease-in";
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll("img");
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show"); // Add the 'show' class when in view
+        }
+      });
+    }, { threshold: 0.1 }); // Adjust threshold if needed
+  
+    elements.forEach((el) => observer.observe(el));
   });
+  
   
 document.getElementById('year').innerText = new Date().getFullYear();
 

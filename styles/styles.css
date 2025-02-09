@@ -4,9 +4,17 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.body{
-    opacity: .2;
-}
+img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  img.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 
 body::-webkit-scrollbar {
     display: none;
