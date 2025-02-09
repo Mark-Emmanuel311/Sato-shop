@@ -3,7 +3,6 @@
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-
 img {
     opacity: 0;
     transform: translateY(20px);
@@ -275,4 +274,24 @@ button:active{
     text-align: right;
     width: 400px;
     font-size: 18px;
+}
+
+@media (max-width: 680px) {
+    *{
+        border: 1px solid red;
+    }
+    .header{
+        width: 100%;
+        padding: 0;
+    }
+
+    .logo{
+        height: 50px;
+    }
+
+    span > p{
+        text-align: center;
+        font-size: 5px;
+        line-height: 1;
+    }
 }
