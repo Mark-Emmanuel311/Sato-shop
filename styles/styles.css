@@ -22,6 +22,7 @@ body::-webkit-scrollbar {
 .header{
     position: sticky;
     z-index: 1;
+    opacity: .8;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -239,8 +240,10 @@ button:active{
     width: 400px;
     background-color: aliceblue;
     position: sticky;
-    top: 250px;
-    margin: 250px auto;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    opacity: 1;
     border-radius: 35px 0 0 0;
 }
 .message > button{
