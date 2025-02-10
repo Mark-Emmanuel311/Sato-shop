@@ -8,13 +8,10 @@ img {
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
-  
   img.show {
     opacity: 1;
     transform: translateY(0);
   }
-  
-
 body::-webkit-scrollbar {
     display: none;
   }
@@ -31,15 +28,12 @@ body::-webkit-scrollbar {
     color: whitesmoke;
     padding: 3px 10px 3px 3px;
 }
-
-
 .logo{
     opacity: unset;
     transform: unset;
     height: 60px;
     border-radius: 50%;
 }
-
 .header > span, .header > button, i{
     display: flex;
     align-items: center;
@@ -47,7 +41,6 @@ body::-webkit-scrollbar {
     padding: 5px;
     font-size: 20px;
 }
-
 .header > button:active{
     background-color: black;
     color: floralwhite;
@@ -55,18 +48,14 @@ body::-webkit-scrollbar {
     transition: .3s;
     padding-right: 15px;
 }
-
 .header > button:hover{
     background-color: black;
     color: aliceblue;
 }
-
 .header p{
     font-weight: bold;
     font-size: 20px;
 }
-
-
 h1{
     font-size: 4vw;
     line-height: 1;
@@ -126,6 +115,7 @@ h2{
     flex-wrap: wrap;
     padding: 3px 5px;
     gap: 10px;
+    justify-content: center;
     clear: both;
     margin-bottom: 20px;
 }
@@ -288,30 +278,24 @@ button:active{
         justify-content: flex-end;
         font-size: 14px;
     }
-
     .header > span > p{
         font-size: 15px;
         text-align: center;
         width: 80px;
     }
-
     .logo{
         height: 50px;
     }
-
     .header > i{
         display: none;
     }
-
     .fade{
         opacity: 0;
     }
-    
     .intro > p{
         font-size: 15px;
         max-width: 98%;
     }
-
     h1{
         font-size: 19px;
     }
@@ -322,5 +306,13 @@ button:active{
     .first{
         height: 200px; 
     }
-    
+   .advert{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 0 0 15px;
+   }
+   .importance{
+        max-width: unset;
+        font-size: 19px;
+   }
 }
